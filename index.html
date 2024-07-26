@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moviesearch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="img-container">
+        <img src="./Netflix_Symbol_PMS.png" alt="" class="logo-img">
+    </div>
+    <p class="page-title">Confused what to watch? Search for your Movies</p>
+    <div class="main-container">
+        <input type="text" placeholder="search for movies" id="movie-input">
+        <button class="btn" id="search-btn" onclick="search()">Search</button>
+    </div>
+    <h1  id="not-found" class="hidden not-found sys-ui">Oops!Movie not found!!</h1>
+    <div class="display-container hidden" id="display-container">
+           
+        <div class="movie-details">
+           <h2>Title: <span id="movieName"></span></h2>
+           <h3>Director: <span id="directorName"></span></h3>
+           <h3>Actors: <span id="actors"></span></h3>
+           <h3>Running-time: <span id="movieTime"></span></h3>
+           <h3>Plot: <span id="desc"></span></h3>
+           <h3>Imdb Ratings: <span id="imdb-ratings"></span></h3>
+           <h3>Languages: <span id="languages"></span></h3>
+           
+        </div>
+        <div class="img-div">
+           <img src="" alt="" class="movie-img" id="movie-img">
+           <div class="ratings"><span id="sugg">Must watch</span></div>
+        </div>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
